@@ -1,16 +1,24 @@
 body {
     font-family: Roboto, sans-serif;
-    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
     list-style-type:none;
     margin:0;
     padding:0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 .topline {
     background: #1F2937;
-    color: #F9FAF8
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 a:link { 
     font-size: 18px;
@@ -19,24 +27,37 @@ a:link {
  }
 .logo {
     font-size: 24px;
+    font-weight: bold;
 }
 
 .body1 {
     background: #1F2937;
-    color: #F9FAF8
+    color: #F9FAF8;
+    padding: 70px 50px;
+    gap: 25 px;
+    display: flex;
+    justify-content: center;
 }
+.body1 .group{
+    align-items: start;
+}
+
 .body1 .header {
     font-size: 48px;
     font-weight: bolder;
+    max-width: 60%;
 }
 .body1 .text {
     font-size: 18px;
-    color: e5e7eb;
+    color:#E5E7EB;
+    padding: 10px 0;
+    max-width:90%;
 }
 
 button {
     background-color:#3882f6;
     color: #E5E7EB;
+    padding: 5px 15px;
 }
 .body4 button {
     border-color: #E5E7EB;
@@ -49,31 +70,70 @@ button {
 
 .body2 {
     text-align: center;
+    padding: 30px 0;
 }
 .body2 img {
     width:100px;
     height:100px;
     border:#3882f6;
 }
+
+.images {
+    display: flex;
+    gap: 50px;
+    margin:0 150px;
+    justify-content: center;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .body2 .header {
     font-size: 36px;
     font-weight: bolder;
+    padding-bottom: 30px;
 }
 
 .body3 {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
 }
 .quote {
     font-size: 36px;
     color:#1F2937;
     font-style: italic;
 }
-
+.quoter {
+    font-weight: bold;
+    display: flex;
+    justify-content:end;
+}
 .body4 {
+    color:#F9FAF8;
     background-color: #3882f6;
+    margin: 40px 50px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.body4 .group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.centerb4 {
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
     background: #1F2937;
-    color: #F9FAF8
+    color: #F9FAF8;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
 }
